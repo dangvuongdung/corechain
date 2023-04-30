@@ -1,0 +1,7 @@
+syntax = "proto3";
+package corechain.corechain;
+
+option go_package = "Corechain/x/corechain/types";
+
+// Msg defines the Msg service.
+service Msg {}
