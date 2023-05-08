@@ -63,7 +63,7 @@
     "postinstall": "node postinstall.cjs",
     "prepare": "node prepare.cjs",
     "preview": "vite preview",
-"host": "vite --host"
+    "host": "vite --host"
   },
   "type": "module",
   "version": "0.4.3"
