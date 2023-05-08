@@ -1,21 +1,41 @@
 version: 1
+genesis:
+  app_state:
+    staking:
+      params:
+        bond_denom: "core"
+    gov:
+      deposit_params:
+        min_deposit:
+          - amount: "10000000"
+            denom: "core"
+    crisis:
+      constant_fee:
+        denom: "core"
+    mint:
+      params:
+        mint_denom: "core"
 accounts:
 - name: alice
   coins:
   - 20000token
-  - 200000000stake
+  - 200000000core
 - name: bob
   coins:
   - 10000token
-  - 100000000stake
-client:
-  openapi:
-    path: docs/static/openapi.yml
+  - 100000000core
 faucet:
   name: bob
   coins:
   - 5token
-  - 100000stake
+  - 100000core
+client:
+  typescript:
+    path: ts-client
+  hooks:
+    path: react/src/hooks
+  openapi:
+    path: docs/static/openapi.yml
 validators:
 - name: alice
-  bonded: 100000000stake
+  bonded: 100000000core
