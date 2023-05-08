@@ -106,6 +106,7 @@ import (
 	corechainmodule "Corechain/x/corechain"
 	corechainmodulekeeper "Corechain/x/corechain/keeper"
 	corechainmoduletypes "Corechain/x/corechain/types"
+
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 
 	appparams "Corechain/app/params"
@@ -113,7 +114,7 @@ import (
 )
 
 const (
-	AccountAddressPrefix = "cosmos"
+	AccountAddressPrefix = "core"
 	Name                 = "Corechain"
 )
 
